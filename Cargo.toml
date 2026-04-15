@@ -1,0 +1,32 @@
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+
+[workspace]
+resolver = "3"
+members = [ "consensus", "database", "e2e-test", "network", "node", "payload","pint", "pint-utils", "primitives", "provider", "transaction_pool"]
+default-members = ["pint"]
+
+[workspace.dependencies]
+primitives = { path = "primitives" }
+provider = { path = "provider" }
+database = { path = "database" }
+transaction_pool = { path = "transaction_pool" }
+payload = { path = "payload" }
+network = { path = "network" }
+consensus = { path = "consensus" }
+node = { path = "node" }
+e2e-test = { path = "e2e-test" }
+
+serde_json = { version = "1.0.140" }
+serde = { version = "1.0.128", features = ["derive"] }
+tokio = { version = "1.0.7", features = ["full"] }
+tokio-stream = "0.1.17"
+parking_lot = { version =  "0.12.4" }
+sha2 = "0.10.9"
+hex = "0.4.3"
+thiserror = "2.0.17"
+tokio-util = "0.7.17"
+tracing = { version = "0.1"}
+tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter"] }

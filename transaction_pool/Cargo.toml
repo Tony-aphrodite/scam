@@ -1,0 +1,19 @@
+[package]
+name = "transaction_pool"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+primitives.workspace = true
+provider.workspace = true
+database.workspace = true
+k256 = { version = "0.13.4", features = ["ecdsa", "sha256"]}
+rand = "0.9.1"
+sha2 = "0.10.9"
+hex.workspace = true
+tokio.workspace = true
+parking_lot.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true

@@ -1,0 +1,17 @@
+[package]
+name = "network"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+tokio.workspace = true
+tokio-stream.workspace = true
+transaction_pool.workspace = true
+provider.workspace = true
+primitives.workspace = true
+parking_lot.workspace = true
+thiserror.workspace = true
+rand = "0.9.1"
+tracing.workspace = true
+tracing-subscriber.workspace = true

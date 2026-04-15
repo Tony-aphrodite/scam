@@ -1,0 +1,18 @@
+[package]
+name = "consensus"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+payload.workspace = true
+provider.workspace = true
+transaction_pool.workspace = true
+network.workspace = true
+primitives.workspace = true
+tokio.workspace = true
+tokio-stream.workspace = true
+tokio-util.workspace = true
+sha2.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true

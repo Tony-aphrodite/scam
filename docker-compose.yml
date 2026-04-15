@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  pint-node:
+    image: pint:latest
+    restart: unless-stopped
+    ports:
+      - "33333:33333"
+      - "8888:8888"
+    command:
+      - "--boot-node"

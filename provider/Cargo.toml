@@ -1,0 +1,15 @@
+[package]
+name = "provider"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+database.workspace = true
+primitives.workspace = true
+sha2.workspace = true
+hex.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+

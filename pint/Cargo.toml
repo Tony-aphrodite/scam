@@ -1,0 +1,24 @@
+[package]
+name = "pint"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+node.workspace = true
+clap = { version = "4.5.42", features = ["derive"] }
+
+primitives.workspace = true
+tokio.workspace = true
+tokio-stream.workspace = true
+network.workspace = true
+hex.workspace = true
+transaction_pool.workspace = true
+provider.workspace = true
+database.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+
+dirs = "5"
+thiserror = "2.0.17"
+tokio-util = "0.7.17"

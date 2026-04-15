@@ -1,0 +1,23 @@
+[package]
+name = "node"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+provider.workspace = true
+transaction_pool.workspace = true
+payload.workspace = true
+consensus.workspace = true
+network.workspace = true
+database.workspace = true
+primitives.workspace = true
+tokio.workspace = true
+tokio-stream.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+serde_json = { version = "1.0.140" }
+serde = { version = "1.0.128", features = ["derive"] }
+axum = "0.8.4"
+hex = "0.4.3"
